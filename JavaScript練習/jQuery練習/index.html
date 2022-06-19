@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html lang="ja">
+<html>
+  
   <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="app.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
+  
   <body>
-    <div class="box1">
-      <div class="box1 bg1"></div>
-      <div class="box1 bg2"></div>
-      <div class="box1 bg3"></div>
-      <div class="box1 bg4"></div>
-    </div>
-    <script src="jquery.min.js"></script>
-    <script src="app.js"></script>
+    <div id="div1" style="background :aqua;">div1</div>  
+    
+    <input type="button" id="button1" value="ボタン1">
+    
+    <script>
+      //jQueryのコードをここに書く
+      //button1がクリックされたら...(CSSセレクタで指定)
+      $('#button1').click(function(){
+        //hide()メソッドを実行
+        $('#div1').hide();
+      });
+    </script>
   </body>
+  
 </html>
